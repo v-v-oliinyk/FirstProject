@@ -15,7 +15,7 @@ min_num, max_num = find_min_max(numbers1)
 for number in range(min_num, max_num + 1):
      numbers2.append(str(number))
 
-numbers_diff = set(numbers2).difference(set(numbers1)) #found easily in Internet how to compare lists.
+numbers_diff = set(numbers2).difference(set(numbers1)) #found easily in Internet how to compare lists..
 
 for number in numbers_diff:
     number = int(number)
