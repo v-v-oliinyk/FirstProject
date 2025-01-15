@@ -18,8 +18,7 @@ for number in range(min_num, max_num + 1):
 numbers_diff = set(numbers2).difference(set(numbers1)) #found easily in Internet how to compare lists.
 
 for number in numbers_diff:
-    numbers_diff.remove(number)
-    numbers_diff.add(int(number))
+    number = int(number)
 
 
 print(f"For '{numbers1}', the missing numbers are: '{sorted(numbers_diff)}'")
