@@ -7,6 +7,7 @@ for word in input_words:
     if word[-1] in skip_symbols:
         input_words.append(word[:-1].lower())
         input_words.remove(word) #Here word appends to the end of list, but in this example it doesn't matter.
-
-print(f"Meaningful words :{sorted(input_words)}")
+sorted_list = sorted(input_words)
+for idx, word in enumerate(sorted_list):
+    print(f"- {word}")
 # Well, i kinda think that you said.
