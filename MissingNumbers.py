@@ -1,24 +1,47 @@
-# numbers1 = list(map(int, input("Please enter the sequence of numbers divided by comma: ").split(', ')))
-numbers1 = list(input("Please enter the sequence of numbers divided by comma: ").split(', '))
-numbers2 = []
-
-# I wanted to create an "IF" for the input. but it makes an error automatically :D it's already enough.
-if not numbers1 or len(numbers1) == 1:
-    print("Please try again.")
-    exit()
-
-def find_min_max(nums):
-    return int(min(nums)), int(max(nums))
-
-min_num, max_num = find_min_max(numbers1)
-
-for number in range(min_num, max_num + 1):
-     numbers2.append(str(number))
-
-numbers_diff = set(numbers2).difference(set(numbers1)) #found easily in Internet how to compare lists..
-
-for number in numbers_diff:
-    number = int(number)
+from math import trunc
 
 
-print(f"For '{numbers1}', the missing numbers are: '{sorted(numbers_diff)}'")
+def find_min_max(number):
+    return min(number), max(number)
+
+list2 = []
+list3 = []
+
+while True:
+    try:
+        list1 = input("Please enter a sequence of numbers separated by comma: ").split(",")
+        for num in list1:
+            num = num.strip()
+            list2.append(int(num)) #it checks automatically when int() is not possible
+        else:
+            if len(list1) <= 1:
+                print("Please enter a valid SEQUENCE of numbers.")
+                continue
+
+            while True:
+                try:
+                    pointer = input(f"Would you like to find missing numbers in any special range (0 - no, 1 - yes)?\n")
+                    if pointer == "1":
+                        min_spec_range = int(input("Please enter the minimal number in range: "))
+                        max_spec_range = int(input("Please enter the maximal number in range: "))
+                        full_range = range(min_spec_range, max_spec_range + 1)
+                        missing_numbers = sorted(set(full_range) - set(list2))
+                    elif pointer == "0":
+                        minimal, maximal = find_min_max(list2)
+                        full_range = range(minimal, maximal + 1)
+                        missing_numbers = sorted(set(full_range) - set(list2))
+                    else :
+                        print("Please enter a valid answer.")
+                        continue
+                    if missing_numbers:
+                        print(f"Missing numbers in the sequence: {missing_numbers}")
+                    else:
+                        print("All numbers are present in the sequence.")
+                    break
+                except ValueError:
+                    print("Please enter a valid answer.")
+            break
+    except ValueError:
+        print("An error occurred. Please enter a valid sequence of numbers.")
+
+
