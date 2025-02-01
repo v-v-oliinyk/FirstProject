@@ -18,22 +18,23 @@ def instruct_user(): #only instructions, nothing special
 def validate_word(word): #word validation
     if len(word) != 5:
         return False
-    elif not word.isalpha():
+    if not word.isalpha():
         return False
-    else:
-        return True
+    return True
 
 def check_word_in_library(word): #checks whether word exist in library
-    if word in words_library:
-        return True
-    else:
-        return False
+    # if word in words_library:
+    #     return True
+    # else:
+    #     return False
+    return word in words_library
 
 def check_guess(guess): #checks whether current word is a secret word.
-    if guess == hidden_word:
-        return True
-    else:
-        return False
+    # if guess == hidden_word:
+    #     return True
+    # else:
+    #     return False
+    return guess == hidden_word
 
 def check_letter(some): #checks letters in word
     for i, char in enumerate(some):
@@ -44,12 +45,12 @@ def check_letter(some): #checks letters in word
                 print("\033[93m" + char + "\033[0m", end='')
         else:
             print("\033[0m" + char + "\033[0m", end='') #\033[90m for gray. But I didn't like it.
-    print("")
+    print()
 
 
 print("Welcome to the Wordle game!")
 pointer = 0
-
+MAGIC = 6
 
 while True:
     try:
@@ -59,17 +60,17 @@ while True:
             instruct_user()
             continue
 
-        correctness = check_guess(attempt)
-
         if not validate_word(attempt):
-            print(f"Please try again and follow the instructions! Attempts left: {6 - pointer}.")
+            print(f"Please try again and follow the instructions! Attempts left: {MAGIC - pointer}.")
             continue
         if not check_word_in_library(attempt):
-            print(f"This word doesn't exist! Please try again! Attempts left: {6 - pointer}.")
+            print(f"This word doesn't exist! Please try again! Attempts left: {MAGIC - pointer}.")
             continue
 
         pointer += 1
-        attempts_left = 6 - pointer
+        attempts_left = MAGIC - pointer
+
+        correctness = check_guess(attempt)
 
         if correctness:
             check_letter(attempt)
