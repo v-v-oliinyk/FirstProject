@@ -1,0 +1,596 @@
+[
+    {
+        "title": "The Last Olympian",
+        "author": "Jane Austen",
+        "year": 1818,
+        "available": false
+    },
+    {
+        "title": "The Kill Order",
+        "author": "Ernest Hemingway",
+        "year": 1899,
+        "available": false
+    },
+    {
+        "title": "1984",
+        "author": "Nathaniel Hawthorne",
+        "year": 1831,
+        "available": false
+    },
+    {
+        "title": "Dracula",
+        "author": "Ray Bradbury",
+        "year": 1923,
+        "available": true
+    },
+    {
+        "title": "The Kill Order",
+        "author": "Jane Austen",
+        "year": 1868,
+        "available": true
+    },
+    {
+        "title": "Fahrenheit 451",
+        "author": "George Orwell",
+        "year": 1827,
+        "available": false
+    },
+    {
+        "title": "Anna Karenina",
+        "author": "Fyodor Dostoevsky",
+        "year": 1830,
+        "available": true
+    },
+    {
+        "title": "The Hunger Games",
+        "author": "Harper Lee",
+        "year": 1994,
+        "available": false
+    },
+    {
+        "title": "Jane Eyre",
+        "author": "Harper Lee",
+        "year": 1817,
+        "available": true
+    },
+    {
+        "title": "Mistborn",
+        "author": "Khaled Hosseini",
+        "year": 1870,
+        "available": true
+    },
+    {
+        "title": "Frankenstein",
+        "author": "Gabriel Garcia Marquez",
+        "year": 1812,
+        "available": true
+    },
+    {
+        "title": "The Maze Runner",
+        "author": "Ray Bradbury",
+        "year": 1869,
+        "available": true
+    },
+    {
+        "title": "Dracula",
+        "author": "Louisa May Alcott",
+        "year": 1946,
+        "available": false
+    },
+    {
+        "title": "Little Women",
+        "author": "Frank Herbert",
+        "year": 1883,
+        "available": false
+    },
+    {
+        "title": "The Mark of Athena",
+        "author": "J.D. Salinger",
+        "year": 1968,
+        "available": true
+    },
+    {
+        "title": "Les Mis\u00e9rables",
+        "author": "Ray Bradbury",
+        "year": 2017,
+        "available": true
+    },
+    {
+        "title": "The Blood of Olympus",
+        "author": "Charlotte Bronte",
+        "year": 1811,
+        "available": true
+    },
+    {
+        "title": "The Iliad",
+        "author": "J.R.R. Tolkien",
+        "year": 1834,
+        "available": false
+    },
+    {
+        "title": "Eclipse",
+        "author": "Harper Lee",
+        "year": 1863,
+        "available": true
+    },
+    {
+        "title": "The Lightning Thief",
+        "author": "J.R.R. Tolkien",
+        "year": 1930,
+        "available": false
+    },
+    {
+        "title": "The Picture of Dorian Gray",
+        "author": "Suzanne Collins",
+        "year": 1833,
+        "available": false
+    },
+    {
+        "title": "The Kite Runner",
+        "author": "Ray Bradbury",
+        "year": 1912,
+        "available": false
+    },
+    {
+        "title": "Pet Sematary",
+        "author": "J.R.R. Tolkien",
+        "year": 2016,
+        "available": true
+    },
+    {
+        "title": "The Picture of Dorian Gray",
+        "author": "Aldous Huxley",
+        "year": 1831,
+        "available": false
+    },
+    {
+        "title": "War and Peace",
+        "author": "Margaret Atwood",
+        "year": 1805,
+        "available": true
+    },
+    {
+        "title": "Life of Pi",
+        "author": "Victor Hugo",
+        "year": 1985,
+        "available": false
+    },
+    {
+        "title": "The Hunger Games",
+        "author": "Fyodor Dostoevsky",
+        "year": 1990,
+        "available": true
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "Fyodor Dostoevsky",
+        "year": 1895,
+        "available": true
+    },
+    {
+        "title": "A Clockwork Orange",
+        "author": "Ernest Hemingway",
+        "year": 1985,
+        "available": false
+    },
+    {
+        "title": "Harry Potter and the Goblet of Fire",
+        "author": "J.D. Salinger",
+        "year": 1935,
+        "available": false
+    },
+    {
+        "title": "The Lightning Thief",
+        "author": "Emily Bronte",
+        "year": 2014,
+        "available": false
+    },
+    {
+        "title": "The Titan's Curse",
+        "author": "Homer",
+        "year": 1823,
+        "available": false
+    },
+    {
+        "title": "The Heroes of Olympus",
+        "author": "Charlotte Bronte",
+        "year": 1807,
+        "available": false
+    },
+    {
+        "title": "Sense and Sensibility",
+        "author": "Stephen King",
+        "year": 2018,
+        "available": true
+    },
+    {
+        "title": "The Sun Also Rises",
+        "author": "Jane Austen",
+        "year": 1882,
+        "available": false
+    },
+    {
+        "title": "Fahrenheit 451",
+        "author": "Emily Bronte",
+        "year": 1905,
+        "available": false
+    },
+    {
+        "title": "The Name of the Wind",
+        "author": "Suzanne Collins",
+        "year": 1985,
+        "available": true
+    },
+    {
+        "title": "The Scarlet Letter",
+        "author": "Rick Riordan",
+        "year": 1895,
+        "available": true
+    },
+    {
+        "title": "The Old Man and the Sea",
+        "author": "Aldous Huxley",
+        "year": 1829,
+        "available": true
+    },
+    {
+        "title": "Brave New World",
+        "author": "Charles Dickens",
+        "year": 1824,
+        "available": true
+    },
+    {
+        "title": "1984",
+        "author": "J.K. Rowling",
+        "year": 1850,
+        "available": false
+    },
+    {
+        "title": "The Kill Order",
+        "author": "J.D. Salinger",
+        "year": 1958,
+        "available": false
+    },
+    {
+        "title": "A Clockwork Orange",
+        "author": "Markus Zusak",
+        "year": 1821,
+        "available": true
+    },
+    {
+        "title": "Carrie",
+        "author": "Leo Tolstoy",
+        "year": 1835,
+        "available": false
+    },
+    {
+        "title": "The Stranger",
+        "author": "J.R.R. Tolkien",
+        "year": 1802,
+        "available": true
+    },
+    {
+        "title": "Mockingjay",
+        "author": "Emily Bronte",
+        "year": 1934,
+        "available": false
+    },
+    {
+        "title": "The Hunger Games",
+        "author": "Stephen King",
+        "year": 1942,
+        "available": true
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "Rick Riordan",
+        "year": 1965,
+        "available": false
+    },
+    {
+        "title": "It",
+        "author": "F. Scott Fitzgerald",
+        "year": 1940,
+        "available": false
+    },
+    {
+        "title": "Harry Potter and the Half-Blood Prince",
+        "author": "J.R.R. Tolkien",
+        "year": 2008,
+        "available": true
+    },
+    {
+        "title": "Insurgent",
+        "author": "Louisa May Alcott",
+        "year": 1917,
+        "available": false
+    },
+    {
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "Jane Austen",
+        "year": 1935,
+        "available": true
+    },
+    {
+        "title": "The Alchemist",
+        "author": "J.R.R. Tolkien",
+        "year": 1802,
+        "available": false
+    },
+    {
+        "title": "The Brothers Karamazov",
+        "author": "Charles Dickens",
+        "year": 1815,
+        "available": true
+    },
+    {
+        "title": "1984",
+        "author": "Homer",
+        "year": 1910,
+        "available": true
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author": "Aldous Huxley",
+        "year": 1853,
+        "available": true
+    },
+    {
+        "title": "The Scarlet Letter",
+        "author": "Nathaniel Hawthorne",
+        "year": 1846,
+        "available": true
+    },
+    {
+        "title": "The Shining",
+        "author": "J.D. Salinger",
+        "year": 1983,
+        "available": false
+    },
+    {
+        "title": "The Lightning Thief",
+        "author": "Khaled Hosseini",
+        "year": 1894,
+        "available": true
+    },
+    {
+        "title": "Divergent",
+        "author": "Jane Austen",
+        "year": 1859,
+        "available": false
+    },
+    {
+        "title": "Twilight",
+        "author": "Charlotte Bronte",
+        "year": 1966,
+        "available": true
+    },
+    {
+        "title": "The Picture of Dorian Gray",
+        "author": "Nathaniel Hawthorne",
+        "year": 1970,
+        "available": false
+    },
+    {
+        "title": "Mockingjay",
+        "author": "Khaled Hosseini",
+        "year": 1834,
+        "available": true
+    },
+    {
+        "title": "The Scarlet Letter",
+        "author": "Jane Austen",
+        "year": 1918,
+        "available": false
+    },
+    {
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "Fyodor Dostoevsky",
+        "year": 1826,
+        "available": false
+    },
+    {
+        "title": "The Way of Kings",
+        "author": "Harper Lee",
+        "year": 1808,
+        "available": true
+    },
+    {
+        "title": "Great Expectations",
+        "author": "Markus Zusak",
+        "year": 1942,
+        "available": false
+    },
+    {
+        "title": "The Metamorphosis",
+        "author": "Gabriel Garcia Marquez",
+        "year": 1959,
+        "available": false
+    },
+    {
+        "title": "Mistborn",
+        "author": "Emily Bronte",
+        "year": 1829,
+        "available": true
+    },
+    {
+        "title": "Sense and Sensibility",
+        "author": "Ray Bradbury",
+        "year": 1839,
+        "available": true
+    },
+    {
+        "title": "The Maze Runner",
+        "author": "Victor Hugo",
+        "year": 1978,
+        "available": true
+    },
+    {
+        "title": "The Road",
+        "author": "Jane Austen",
+        "year": 1983,
+        "available": true
+    },
+    {
+        "title": "The Great Gatsby",
+        "author": "Herman Melville",
+        "year": 1991,
+        "available": false
+    },
+    {
+        "title": "Wuthering Heights",
+        "author": "Fyodor Dostoevsky",
+        "year": 1876,
+        "available": true
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author": "J.R.R. Tolkien",
+        "year": 1921,
+        "available": false
+    },
+    {
+        "title": "The Alchemist",
+        "author": "Emily Bronte",
+        "year": 1917,
+        "available": true
+    },
+    {
+        "title": "One Hundred Years of Solitude",
+        "author": "Margaret Atwood",
+        "year": 1880,
+        "available": true
+    },
+    {
+        "title": "Harry Potter and the Order of the Phoenix",
+        "author": "Nathaniel Hawthorne",
+        "year": 2002,
+        "available": false
+    },
+    {
+        "title": "Fahrenheit 451",
+        "author": "Louisa May Alcott",
+        "year": 1981,
+        "available": false
+    },
+    {
+        "title": "The Stranger",
+        "author": "Jane Austen",
+        "year": 1993,
+        "available": true
+    },
+    {
+        "title": "The Gunslinger",
+        "author": "Louisa May Alcott",
+        "year": 1920,
+        "available": false
+    },
+    {
+        "title": "Wuthering Heights",
+        "author": "George Orwell",
+        "year": 1838,
+        "available": true
+    },
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Homer",
+        "year": 1991,
+        "available": false
+    },
+    {
+        "title": "The Battle of the Labyrinth",
+        "author": "Aldous Huxley",
+        "year": 1861,
+        "available": true
+    },
+    {
+        "title": "The Scorch Trials",
+        "author": "Nathaniel Hawthorne",
+        "year": 1925,
+        "available": false
+    },
+    {
+        "title": "The Book Thief",
+        "author": "Harper Lee",
+        "year": 1957,
+        "available": false
+    },
+    {
+        "title": "Dune",
+        "author": "J.K. Rowling",
+        "year": 1994,
+        "available": true
+    },
+    {
+        "title": "The Brothers Karamazov",
+        "author": "Emily Bronte",
+        "year": 1817,
+        "available": true
+    },
+    {
+        "title": "The Picture of Dorian Gray",
+        "author": "Fyodor Dostoevsky",
+        "year": 1939,
+        "available": true
+    },
+    {
+        "title": "It",
+        "author": "Ernest Hemingway",
+        "year": 1953,
+        "available": false
+    },
+    {
+        "title": "Don Quixote",
+        "author": "Nathaniel Hawthorne",
+        "year": 2019,
+        "available": false
+    },
+    {
+        "title": "The Road",
+        "author": "J.R.R. Tolkien",
+        "year": 1802,
+        "available": true
+    },
+    {
+        "title": "The Gunslinger",
+        "author": "Harper Lee",
+        "year": 1812,
+        "available": false
+    },
+    {
+        "title": "The Old Man and the Sea",
+        "author": "Nathaniel Hawthorne",
+        "year": 1867,
+        "available": false
+    },
+    {
+        "title": "Pet Sematary",
+        "author": "Harper Lee",
+        "year": 1890,
+        "available": true
+    },
+    {
+        "title": "Anna Karenina",
+        "author": "Harper Lee",
+        "year": 2016,
+        "available": true
+    },
+    {
+        "title": "Memoirs of a Geisha",
+        "author": "Louisa May Alcott",
+        "year": 2014,
+        "available": true
+    },
+    {
+        "title": "Breaking Dawn",
+        "author": "Khaled Hosseini",
+        "year": 1976,
+        "available": false
+    },
+    {
+        "title": "The Hobbit",
+        "author": "Charlotte Bronte",
+        "year": 1901,
+        "available": false
+    }
+]
