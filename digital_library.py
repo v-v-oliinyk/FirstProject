@@ -1,6 +1,4 @@
 import json
-import os
-
 sample_lib = [
     {
         "title": "1984",
@@ -36,7 +34,7 @@ def add_book(): #1
 
 def find_book(): #2
     author_search = input("* Enter book author: ").lower()
-    year_search = int(input("* Enter publication year: ")) #i didn't make any check. How to do it in easiest way?
+    year_search = int(input("* Enter publication year: ")) #I didn't make any check. How to do it in easier way?
 
     books_found = 0
 
@@ -100,7 +98,7 @@ def save_library_to_json():
     #it works, but I have an error with "json_file". I think it should be another way to write the same functionality.
     try:
         # Check if file exists first
-        with open(books_library, "r", encoding="utf-8") as json_file:
+        with open(books_library, "r", encoding="utf-8"):
             file_overwrite = input(
                 f"* The file {books_library} already exists. Would you like to overwrite it? (y/n): ")
             if file_overwrite.lower() == "y":
@@ -145,5 +143,6 @@ def main():
         except (KeyboardInterrupt, ValueError):
             print(f"\nYou entered smth wrong. Start everything again.")
             print("\n_______________________________________\n")
+
 print("___Digital Library___")
 main()
