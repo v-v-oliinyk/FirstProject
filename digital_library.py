@@ -1,4 +1,6 @@
 import json
+import os.path
+
 sample_lib = [
     {
         "title": "1984",
@@ -20,7 +22,8 @@ def add_book(): #1
             title = input("* Enter book title: ")
             author = input("* Enter book author: ")
             year = int(input("Enter publication year: "))
-            availability = bool(input("* Is this book available? (True/False): ")) #Need to be modified
+            availability_status = int(input("* Is this book currently available? (1/0): "))
+            availability = bool(availability_status)
             if title and author and availability:
                 sample_lib.append({"title": title, "author": author, "year": year, "availability": availability})
                 print(f"The book \"{title}\" was successfully added.")
@@ -34,7 +37,16 @@ def add_book(): #1
 
 def find_book(): #2
     author_search = input("* Enter book author: ").lower()
-    year_search = int(input("* Enter publication year: ")) #I didn't make any check. How to do it in easier way?
+    while True:
+        year_search = input("* Enter publication year: ") #I didn't make any check. How to do it in easier way?
+        if year_search.isdigit():
+            year_search = int(year_search)
+            break
+        elif not year_search:
+            break
+        else:
+            print("You entered an invalid year. Please try again.")
+            continue
 
     books_found = 0
 
@@ -43,10 +55,7 @@ def find_book(): #2
     elif not author_search or not year_search: #when one of the inputs is not empty
         for book in sample_lib:
             author = book["author"].lower()
-            if author_search == author:
-                books_found += 1
-                print(f"The book {book['title']} was successfully found.")
-            elif year_search == book["year"]:
+            if author_search == author or year_search == book["year"]:
                 books_found += 1
                 print(f"The book {book['title']} was successfully found.")
     else: #when both inputs are not empty
@@ -95,53 +104,44 @@ def load_books_from_json():
 
 def save_library_to_json():
     books_library = input("* Please, enter the name of the file (without extension): ") + ".json"
-    #it works, but I have an error with "json_file". I think it should be another way to write the same functionality.
-    try:
-        # Check if file exists first
-        with open(books_library, "r", encoding="utf-8"):
-            file_overwrite = input(
-                f"* The file {books_library} already exists. Would you like to overwrite it? (y/n): ")
-            if file_overwrite.lower() == "y":
-                with open(books_library, "w", encoding="utf-8") as json_file:
-                    json.dump(sample_lib, json_file, indent="4")
-                    print("The file was successfully overwritten. Have a nice day!.")
-            else:
-                print("Have a nice day!")
 
-    except FileNotFoundError:
-        with open(books_library, "w", encoding="utf-8") as json_file:
-            json.dump(sample_lib, json_file, indent="4")
-            print("The books were successfully saved. Have a nice day!")
+    if os.path.isfile(books_library):
+        file_overwrite = input(f"* The file {books_library} already exists. Would you like to overwrite it? (y/n): ")
+        if file_overwrite.lower() != "y":
+            print("You were returned to the menu.")
+            return
+
+    with open(books_library, "w") as json_file:
+        json.dump(sample_lib, json_file, indent=4) # It writes the file only when program stops :(
 
     print("\n_______________________________________\n")
 
+
+
 def main():
+    options = {
+        "1": add_book,
+        "2": find_book,
+        "3": update_availability,
+        "4": get_all_titles,
+        "5": load_books_from_json,
+        "6": save_library_to_json
+    }
     while True:
-        menu_option = input("""Menu:\n1. Add a book manually\n2. Search for books\n3. Update book availability\n4. List all book titles\n5. Load books from a JSON file\n6. Save and exit\nEnter the option you would like to choose: """)
+        menu_option = input("""Menu:\n1. Add a book manually\n2. Search for books\n3. Update book availability\n4. List all book titles\n5. Load books from a JSON file\n6. Save \n7. Exit \nEnter the option you would like to choose (1-7): """)
+
         try:
-            if menu_option == "1":
-                add_book()
-                continue
-            elif menu_option == "2":
-                find_book()
-                continue
-            elif menu_option == "3":
-                update_availability()
-                continue
-            elif menu_option == "4":
-                get_all_titles()
-                continue
-            elif menu_option == "5":
-                load_books_from_json()
-                continue
-            elif menu_option == "6":
-                save_library_to_json()
+            if menu_option in options:
+                try:
+                    options[menu_option]()
+                except Exception as e:
+                    print(f"An error occurred: {e}")
+            elif menu_option == "7":
                 break
             else:
-                print("\nYou entered an invalid option. Please try again.\n")
-                continue
-        except (KeyboardInterrupt, ValueError):
-            print(f"\nYou entered smth wrong. Start everything again.")
+                print("Invalid option. Please try again.")
+        except (KeyboardInterrupt, ValueError) as e:
+            print(f"\n{e}. Entered DATA are wrong. Start everything again.")
             print("\n_______________________________________\n")
 
 print("___Digital Library___")
