@@ -1,5 +1,6 @@
 import json
 import os.path
+import time
 
 sample_lib = [
     {
@@ -113,6 +114,7 @@ def save_library_to_json():
 
     with open(books_library, "w") as json_file:
         json.dump(sample_lib, json_file, indent=4) # It writes the file only when program stops :(
+        print("The file was successfully saved.")
 
     print("\n_______________________________________\n")
 
@@ -120,20 +122,25 @@ def save_library_to_json():
 
 def main():
     options = {
-        "1": add_book,
-        "2": find_book,
-        "3": update_availability,
-        "4": get_all_titles,
-        "5": load_books_from_json,
-        "6": save_library_to_json
+        "1": ["Add a book manually", add_book],
+        "2": ["Search for books", find_book],
+        "3": ["Update book availability", update_availability],
+        "4": ["List all book titles", get_all_titles],
+        "5": ["Load books from a JSON file", load_books_from_json],
+        "6": ["Save current library to JSON file", save_library_to_json],
+        "7": ["Exit", exit]
     }
     while True:
-        menu_option = input("""Menu:\n1. Add a book manually\n2. Search for books\n3. Update book availability\n4. List all book titles\n5. Load books from a JSON file\n6. Save \n7. Exit \nEnter the option you would like to choose (1-7): """)
-
+        print("Menu:")
+        for option, function in options.items():
+            print(option + '. ' + function[0])
+        else:
+           menu_option = input(f"Enter the option you would like to choose (1-{option}):")
         try:
             if menu_option in options:
                 try:
-                    options[menu_option]()
+                    options[menu_option][1]()
+                    time.sleep(2)
                 except Exception as e:
                     print(f"An error occurred: {e}")
             elif menu_option == "7":
